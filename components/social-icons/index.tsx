@@ -8,10 +8,9 @@ import {
   Mastodon,
   Threads,
   Instagram,
-  Telegram,   
-  Discord,     // Add this
-  Farcast,    // Add this
-  
+  Telegram,
+  Discord, // Add this
+  Farcast, // Add this
 } from './icons'
 
 const components = {
@@ -24,10 +23,9 @@ const components = {
   mastodon: Mastodon,
   threads: Threads,
   instagram: Instagram,
-  telegram: Telegram,    
-  discord: Discord,      // Add this
-  farcast: Farcast,    // Add this
-  
+  telegram: Telegram,
+  discord: Discord, // Add this
+  farcast: Farcast, // Add this
 }
 
 type SocialIconProps = {

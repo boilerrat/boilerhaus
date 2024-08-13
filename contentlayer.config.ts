@@ -138,10 +138,10 @@ export const Authors = defineDocumentType(() => ({
     twitter: { type: 'string' },
     linkedin: { type: 'string' },
     github: { type: 'string' },
-    X: { type: 'string' },         // Added field
-    telegram: { type: 'string' },   // Added field
-    Discord: { type: 'string' },    // Added field
-    Farcast: { type: 'string' },   // Added field
+    X: { type: 'string' }, // Added field
+    telegram: { type: 'string' }, // Added field
+    Discord: { type: 'string' }, // Added field
+    Farcast: { type: 'string' }, // Added field
     layout: { type: 'string' },
   },
   computedFields,
