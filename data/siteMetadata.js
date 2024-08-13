@@ -1,8 +1,8 @@
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
-  title: 'Boilers Haus',
+  title: 'Boiler.Haus',
   author: 'Christopher P Wylde',
-  headerTitle: 'BoilersHaus',
+  headerTitle: 'Boiler.Haus',
   description: 'Boilers Web3 Journal',
   language: 'en-us',
   theme: 'dark', // system, dark or light
