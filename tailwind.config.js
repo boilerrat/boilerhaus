@@ -25,7 +25,17 @@ module.exports = {
         sans: ['var(--font-space-grotesk)', ...fontFamily.sans],
       },
       colors: {
-        primary: colors.pink,
+        primary: {
+          100: '#ffe5e5',  // Lightest shade
+          200: '#ffb3b3',
+          300: '#ff8080',
+          400: '#ff4d4d',
+          500: '#ff3131',  // Main primary color
+          600: '#e62929',  // Darker shade
+          700: '#cc2222',
+          800: '#b31a1a',
+          900: '#991313',  // Darkest shade
+        },
         gray: colors.gray,
       },
       zIndex: {
@@ -39,7 +49,7 @@ module.exports = {
             a: {
               color: theme('colors.primary.500'),
               '&:hover': {
-                color: `${theme('colors.primary.600')}`,
+                color: theme('colors.primary.600'),
               },
               code: { color: theme('colors.primary.400') },
             },
@@ -60,7 +70,7 @@ module.exports = {
             a: {
               color: theme('colors.primary.500'),
               '&:hover': {
-                color: `${theme('colors.primary.400')}`,
+                color: theme('colors.primary.400'),
               },
               code: { color: theme('colors.primary.400') },
             },
