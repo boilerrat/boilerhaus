@@ -4,11 +4,14 @@ import {
   Facebook,
   Youtube,
   Linkedin,
-  Twitter,
   X,
   Mastodon,
   Threads,
   Instagram,
+  Telegram,   
+  Discord,     // Add this
+  Farcast,    // Add this
+  
 } from './icons'
 
 const components = {
@@ -17,11 +20,14 @@ const components = {
   facebook: Facebook,
   youtube: Youtube,
   linkedin: Linkedin,
-  twitter: Twitter,
   x: X,
   mastodon: Mastodon,
   threads: Threads,
   instagram: Instagram,
+  telegram: Telegram,    
+  discord: Discord,      // Add this
+  farcast: Farcast,    // Add this
+  
 }
 
 type SocialIconProps = {

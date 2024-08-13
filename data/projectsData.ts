@@ -7,20 +7,16 @@ interface Project {
 
 const projectsData: Project[] = [
   {
-    title: 'A Search Engine',
-    description: `What if you could look up any information in the world? Webpages, images, videos
-    and more. Google has many features to help you find exactly what you're looking
-    for.`,
-    imgSrc: '/static/images/google.png',
-    href: 'https://www.google.com',
+    title: 'DAO Masons',
+    description: `Bespoke Web3 solutions. Inspired by game design.`,
+    imgSrc: '/static/images/daomasonrook.png',
+    href: 'https://www.daomasons.com/',
   },
   {
-    title: 'The Time Machine',
-    description: `Imagine being able to travel back in time or to the future. Simple turn the knob
-    to the desired date and press "Go". No more worrying about lost keys or
-    forgotten headphones with this simple yet affordable solution.`,
-    imgSrc: '/static/images/time-machine.jpg',
-    href: '/blog/the-time-machine',
+    title: 'Grant Ships',
+    description: `Grant Ships is a novel approach to decide where funding goes in your Web3 community. Everyone gets to play a part, making choices together to support great projects. It's all about teamwork, clear choices, and making a big impact.`,
+    imgSrc: '/static/images/grantships.png',
+    href: 'https://grantships.fun',
   },
 ]
 

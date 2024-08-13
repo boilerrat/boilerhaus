@@ -5,11 +5,16 @@ import Image from '@/components/Image'
 
 interface Props {
   children: ReactNode
-  content: Omit<Authors, '_id' | '_raw' | 'body'>
+  content: Omit<Authors, '_id' | '_raw' | 'body'> & {
+    X?: string
+    telegram?: string
+    Discord?: string
+    Farcast?: string
+  }
 }
 
 export default function AuthorLayout({ children, content }: Props) {
-  const { name, avatar, occupation, company, email, twitter, linkedin, github } = content
+  const { name, avatar, occupation, company, email, X, linkedin, telegram, Discord, Farcast, github } = content
 
   return (
     <>
@@ -35,9 +40,12 @@ export default function AuthorLayout({ children, content }: Props) {
             <div className="text-gray-500 dark:text-gray-400">{company}</div>
             <div className="flex space-x-3 pt-6">
               <SocialIcon kind="mail" href={`mailto:${email}`} />
-              <SocialIcon kind="github" href={github} />
-              <SocialIcon kind="linkedin" href={linkedin} />
-              <SocialIcon kind="x" href={twitter} />
+              {github && <SocialIcon kind="github" href={github} />}
+              {linkedin && <SocialIcon kind="linkedin" href={linkedin} />}
+              {X && <SocialIcon kind="x" href={X} />}
+              {telegram && <SocialIcon kind="telegram" href={telegram} />}
+              {Discord && <SocialIcon kind="discord" href={Discord} />}
+              {Farcast && <SocialIcon kind="farcast" href={Farcast} />}
             </div>
           </div>
           <div className="prose max-w-none pb-8 pt-8 dark:prose-invert xl:col-span-2">
